@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# The reusable release workflow publishes a GitHub Release and uploads
+# the plugin jar as a release asset; without `contents: write` the
+# step that creates the release 403s.
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: risa-labs-inc/BossConsole-Releases/.github/workflows/plugin-release.yml@main
+    with:
+      boss_plugin_api_version: 'latest'
+    secrets:
+      BOSS_STORE_PLUGIN_PUBLISH_KEY: ${{ secrets.BOSS_STORE_PLUGIN_PUBLISH_KEY }}

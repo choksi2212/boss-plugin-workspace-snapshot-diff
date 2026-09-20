@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "pluginId": "ai.rever.boss.plugin.dynamic.wsdiff",
+  "displayName": "Workspace Diff",
+  "version": "0.1.0",
+  "apiVersion": "1.0.93",
+  "minApiVersion": "1.0.93",
+  "minBossVersion": "9.4.2",
+  "mainClass": "ai.rever.boss.plugin.dynamic.wsdiff.WorkspaceDiffDynamicPlugin",
+  "type": "mixed",
+  "description": "Visual diff between two saved BOSS workspaces - panels added/removed/moved, tab count delta, split orientation change, project change. The first workspace-diff tool for BOSS.",
+  "author": "Choksi",
+  "url": "https://github.com/choksi2212/boss-plugin-workspace-snapshot-diff",
+  "panel": { "position": "left_bottom", "priority": 86 },
+  "sandbox": {
+    "maxThreads": 4,
+    "maxRestartAttempts": 3,
+    "heartbeatIntervalMs": 5000
+  },
+  "isolationMode": "out-of-process",
+  "fallback": "in-process"
+}
