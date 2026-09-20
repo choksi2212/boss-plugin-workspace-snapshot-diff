@@ -12,7 +12,7 @@ group = "ai.rever.boss.plugin.dynamic"
 // tab count delta, split orientation change, project change. The first workspace-diff
 // tool for BOSS. Snapshots are read live from WorkspaceManager, diff is rendered in a
 // left_bottom sidebar panel and exposed through workspace_* MCP tools.
-version = "0.1.0"
+version = "0.1.1"
 
 val useLocalDependencies = System.getenv("CI") != "true"
 val bossPluginApiPath = "../boss-plugin-api"
