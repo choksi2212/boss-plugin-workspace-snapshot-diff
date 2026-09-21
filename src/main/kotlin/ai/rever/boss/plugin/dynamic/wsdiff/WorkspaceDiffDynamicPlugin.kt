@@ -23,7 +23,7 @@ class WorkspaceDiffDynamicPlugin : DynamicPlugin {
         "Visual diff between two saved BOSS workspaces - panels added/removed/moved, " +
             "tab count delta, split orientation change, project change. The first " +
             "workspace-diff tool for BOSS."
-    override val author: String = "Choksi"
+    override val author: String = "choksi2212"
     override val url: String = "https://github.com/choksi2212/boss-plugin-workspace-snapshot-diff"
 
     private var mcpProvider: WorkspaceDiffMcpToolProvider? = null
